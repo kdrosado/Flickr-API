@@ -8,7 +8,7 @@ $(document).ready(function() {//runs after HTML is displayed
     $(this).addClass("selected");//highlights selected button
     
     //access public photos on Flickr API
-    var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+    var flickrAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
     var animal = $(this).text();//holds value of button selected
    
     //parse json data
@@ -29,7 +29,7 @@ $(document).ready(function() {//runs after HTML is displayed
       });
       photoHTML += '</ul>';//closes photo list
       
-      $('#photo').html(photoHTML);//displays photo to HTML page
+      $('#photos').html(photoHTML);//displays photo to HTML page
       
     }    
     
